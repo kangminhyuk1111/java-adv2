@@ -11,7 +11,7 @@ public class ReadFileV4 {
         FileInputStream fis = new FileInputStream(FILE_NAME);
         long startTime = System.currentTimeMillis();
 
-        byte[] bytes = fis.readAllBytes();
+        final byte[] bytes = fis.readAllBytes();
         fis.close();
 
         long endTime = System.currentTimeMillis();

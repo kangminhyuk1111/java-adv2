@@ -12,7 +12,7 @@ public class CreateFileV4 {
         FileOutputStream fos = new FileOutputStream(FILE_NAME);
         long startTime = System.currentTimeMillis();
 
-        byte[] buffer = new byte[FILE_SIZE];
+        final byte[] buffer = new byte[FILE_SIZE];
         for (int i = 0; i < FILE_SIZE; i++) {
             buffer[i] = 1;
         }
